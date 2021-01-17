@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.lanyus.blocksecureflag">
+    package="com.redlee90.forceshowincutout">
 
     <application
-        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:label="@string/app_name">
         <meta-data
             android:name="xposedmodule"
-            android:value="true"/>
+            android:value="true" />
         <meta-data
             android:name="xposeddescription"
-            android:value="阻止添加WindowManager.LayoutParams.FLAG_SECURE标志，可用于截图禁止截图的软件。"/>
+            android:value="Force show content in display cutout in case the app doesn't support it. Useful for video streaming, gaming, etc." />
         <meta-data
             android:name="xposedminversion"
-            android:value="30"/>
-
-        <activity
-            android:name=".MainActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:value="30" />
     </application>
 
 </manifest>
